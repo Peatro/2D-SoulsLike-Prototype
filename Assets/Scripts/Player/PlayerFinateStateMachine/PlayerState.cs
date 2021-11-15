@@ -48,7 +48,7 @@ public class PlayerState
     public virtual void DoChecks()
     {
 
-    }
+    }     
 
     public virtual void AnimationTrigger() { }
 

@@ -40,6 +40,10 @@ public class PlayerGroundedState : PlayerState
             player.InputHandler.UseJumpInput();
             stateMachine.ChangeState(player.JumpState);
         }
+        if (player.CheckIfGrounded() == false)
+        {
+            stateMachine.ChangeState(player.InAirState);
+        }
     }
 
     public override void PhysicsUpdate()

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cff81b40e9e5f9479cd46865946199e, type: 3}
   m_Name: playerData
   m_EditorClassIdentifier: 
-  movementVelocity: 5
+  movementVelocity: 7.5
   jumpVelocity: 15
   groundCheckRadius: 0.3
   whatIsGround:
