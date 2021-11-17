@@ -42,3 +42,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3107354887
+    locked: 0
+  - name: Middleground
+    uniqueID: 486644917
+    locked: 0
+  - name: Ground
+    uniqueID: 3753757055
+    locked: 0
+  - name: ActiveLayer
+    uniqueID: 2922339773
+    locked: 0

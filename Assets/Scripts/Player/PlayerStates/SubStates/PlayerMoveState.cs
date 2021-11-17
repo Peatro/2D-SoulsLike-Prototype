@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PlayerMoveState : PlayerGroundedState
 {
-    public PlayerMoveState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
-    {
+    private AudioClip soundEffect;
 
+    public PlayerMoveState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName, AudioClip soundEffect) : base(player, stateMachine, playerData, animBoolName)
+    {
+        this.soundEffect = soundEffect;
     }
 
     public override void DoChecks()
@@ -17,11 +19,17 @@ public class PlayerMoveState : PlayerGroundedState
     public override void Enter()
     {
         base.Enter();
+        player.AudioSource.clip = soundEffect;
+        if (player.AudioSource.isPlaying == false)
+        {
+            player.AudioSource.Play();
+        }        
     }
 
     public override void Exit()
     {
         base.Exit();
+        player.AudioSource.Stop();
     }
 
     public override void LogicUpdate()

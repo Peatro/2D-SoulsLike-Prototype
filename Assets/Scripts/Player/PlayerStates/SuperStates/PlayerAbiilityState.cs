@@ -10,7 +10,10 @@ public class PlayerAbiilityState : PlayerState
 
     public PlayerAbiilityState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
+    }
 
+    public PlayerAbiilityState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName, AudioClip audioClip) : base(player, stateMachine, playerData, animBoolName, audioClip)
+    {
     }
 
     public override void DoChecks()
@@ -36,7 +39,7 @@ public class PlayerAbiilityState : PlayerState
     {
         base.LogicUpdate();
 
-        if (isAbilityDone)
+        if (isAbilityDone && isAnimationFinished == true)
         {
             if (isGrounded && player.CurrentVelocity.y < 0.01f)
             {

@@ -10,6 +10,8 @@ public class PlayerInputHandler : MonoBehaviour
     public int NormInputX { get; private set; }
     public int NormInputY { get; private set; }
     public bool JumpInput { get; private set; }
+    public bool LightAttackInput { get; private set; }
+    public bool HeavyAttackInput { get; private set; }
 
     public void OnMoveinput(InputAction.CallbackContext context)
     {
@@ -24,6 +26,33 @@ public class PlayerInputHandler : MonoBehaviour
         if(context.started)
         {
             JumpInput = true;
+        }
+        if(context.canceled)
+        {
+            JumpInput = false;
+        }
+    }
+
+    public void OnLightAttackInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            LightAttackInput = true;
+        }
+        if (context.canceled)
+        {
+            LightAttackInput = false;
+        }            
+    }
+    public void OnHeavyAttackInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            HeavyAttackInput = true;
+        }
+        if (context.canceled)
+        {
+            HeavyAttackInput = false;
         }
     }
 

@@ -7,12 +7,13 @@ public class PlayerState
     protected Player player;
     protected PlayerStateMachine stateMachine;
     protected PlayerData playerData;
+    protected AudioClip audioClip;
 
     protected bool isAnimationFinished;
 
     protected float startTime;
 
-    private string animBoolName;
+    protected string animBoolName;
 
     public PlayerState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName)
     {
@@ -20,6 +21,14 @@ public class PlayerState
         this.stateMachine = stateMachine;
         this.playerData = playerData;
         this.animBoolName = animBoolName;
+    }
+    public PlayerState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName, AudioClip audioClip)
+    {
+        this.player = player;
+        this.stateMachine = stateMachine;
+        this.playerData = playerData;
+        this.animBoolName = animBoolName;
+        this.audioClip = audioClip;
     }
 
     public virtual void Enter()

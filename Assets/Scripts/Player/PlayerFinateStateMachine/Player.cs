@@ -12,14 +12,20 @@ public class Player : MonoBehaviour
     public PlayerJumpState JumpState { get; private set; }
     public PlayerInAirState InAirState { get; private set; }
     public PlayerLandState LandState { get; private set; }
+    public PlayerAttackState AttackState { get; private set; }
 
     [SerializeField] private PlayerData playerData;
+    [SerializeField] private AudioClip footstepSFX;
+    [SerializeField] private AudioClip jumpSFX;
+    [SerializeField] private AudioClip attackSFX;
     #endregion
 
     #region Components
     public Animator Anim { get; private set; }
     public PlayerInputHandler InputHandler {get; private set;}
     public Rigidbody2D Rigidbody { get; private set; }
+    public AudioSource AudioSource { get; private set; }
+
     #endregion
 
     #region Check Transforms
@@ -41,10 +47,11 @@ public class Player : MonoBehaviour
         StateMachine = new PlayerStateMachine();        
 
         IdleState = new PlayerIdleState(this, StateMachine, playerData, "idle");
-        MoveState = new PlayerMoveState(this, StateMachine, playerData, "move");
-        JumpState = new PlayerJumpState(this, StateMachine, playerData, "jump");
+        MoveState = new PlayerMoveState(this, StateMachine, playerData, "move", footstepSFX);
+        JumpState = new PlayerJumpState(this, StateMachine, playerData, "jump", jumpSFX);
         InAirState = new PlayerInAirState(this, StateMachine, playerData, "inAir");
         LandState = new PlayerLandState(this, StateMachine, playerData, "land");
+        AttackState = new PlayerAttackState(this, StateMachine, playerData, "lightAttack", attackSFX);
     }
 
     private void Start()
@@ -52,6 +59,7 @@ public class Player : MonoBehaviour
         Anim = GetComponent<Animator>();
         InputHandler = GetComponent<PlayerInputHandler>();
         Rigidbody = GetComponent<Rigidbody2D>();
+        AudioSource = GetComponent<AudioSource>();
 
         FacingDirection = 1;
 
@@ -76,6 +84,7 @@ public class Player : MonoBehaviour
         workspace.Set(velocity, CurrentVelocity.y);
         Rigidbody.velocity = workspace;
         CurrentVelocity = workspace;
+        Debug.Log(Rigidbody.velocity);
     }
 
     public void SetVelocityY(float velocity)
