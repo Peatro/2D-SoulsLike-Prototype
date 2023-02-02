@@ -237,7 +237,7 @@ TextureImporter:
       213: 4023378257968726552
     second: Pale Moon Tileset_77
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -258,6 +258,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -296,6 +297,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -347,6 +349,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2008,6 +2022,85 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Pale Moon Tileset_22: -9139324482859922941
+      Pale Moon Tileset_27: -7572656688304924313
+      Pale Moon Tileset_20: 8171058197944014811
+      Pale Moon Tileset_41: -4807158749760711899
+      Pale Moon Tileset_54: 5703323558004738955
+      Pale Moon Tileset_70: -6876799715866783320
+      Pale Moon Tileset_19: -7325621049087517015
+      Pale Moon Tileset_63: -8951247080082341539
+      Pale Moon Tileset_2: -3002634861611759989
+      Pale Moon Tileset_11: -5518976783894153164
+      Pale Moon Tileset_10: 8332620586026424525
+      Pale Moon Tileset_6: -3317715590833583155
+      Pale Moon Tileset_31: -372028433427829659
+      Pale Moon Tileset_35: -1933265704930307360
+      Pale Moon Tileset_23: -4568329537996919958
+      Pale Moon Tileset_64: 5248984453284083756
+      Pale Moon Tileset_33: -9035917789478090236
+      Pale Moon Tileset_66: 3408814615685865545
+      Pale Moon Tileset_71: -7564943233819471375
+      Pale Moon Tileset_69: 12972118372673507
+      Pale Moon Tileset_73: 5887921133169089174
+      Pale Moon Tileset_1: 2676578429127788152
+      Pale Moon Tileset_51: -2902056437930898980
+      Pale Moon Tileset_49: 1552943291948453391
+      Pale Moon Tileset_67: 6133916158217556092
+      Pale Moon Tileset_62: -7505837039646047268
+      Pale Moon Tileset_42: -9203176482298606668
+      Pale Moon Tileset_53: 145511960855906135
+      Pale Moon Tileset_32: -3303233266203083827
+      Pale Moon Tileset_50: 5052734938583810855
+      Pale Moon Tileset_0: -8636774454652422351
+      Pale Moon Tileset_8: -7498494361337620075
+      Pale Moon Tileset_21: 3424991606783940440
+      Pale Moon Tileset_77: 4023378257968726552
+      Pale Moon Tileset_14: 3585386762992801561
+      Pale Moon Tileset_40: -1534347791903232383
+      Pale Moon Tileset_18: 6890270306660726497
+      Pale Moon Tileset_34: 2000616750735202367
+      Pale Moon Tileset_25: 3077129103078256701
+      Pale Moon Tileset_17: -6290366580119570666
+      Pale Moon Tileset_57: 7072126662291494658
+      Pale Moon Tileset_58: 6600422421244281960
+      Pale Moon Tileset_5: 4188653475264243641
+      Pale Moon Tileset_74: -7567237055915557748
+      Pale Moon Tileset_76: -3197087190237094350
+      Pale Moon Tileset_75: -5138964476425501327
+      Pale Moon Tileset_48: -1055381555635610766
+      Pale Moon Tileset_26: -8377266691684815348
+      Pale Moon Tileset_13: 3259318574634466342
+      Pale Moon Tileset_65: -8099247897479279615
+      Pale Moon Tileset_72: 5311007219643248158
+      Pale Moon Tileset_60: 5230654846828161079
+      Pale Moon Tileset_12: 4695163657258508442
+      Pale Moon Tileset_44: -7254738317951544909
+      Pale Moon Tileset_43: 4828574342045392229
+      Pale Moon Tileset_9: -5128347428597354939
+      Pale Moon Tileset_38: -3887977760576397730
+      Pale Moon Tileset_30: 2184300927733721209
+      Pale Moon Tileset_29: 3424633998710374568
+      Pale Moon Tileset_39: -1981513520657108981
+      Pale Moon Tileset_37: -6187948080375471766
+      Pale Moon Tileset_47: -7989794151955009614
+      Pale Moon Tileset_16: -431939617872921285
+      Pale Moon Tileset_36: -3927156291585352641
+      Pale Moon Tileset_7: -8859056222281418368
+      Pale Moon Tileset_46: 537382260836734660
+      Pale Moon Tileset_59: 2627912942407866890
+      Pale Moon Tileset_52: 2892603612105743478
+      Pale Moon Tileset_61: 4994965480880505378
+      Pale Moon Tileset_45: 4911665681439494199
+      Pale Moon Tileset_3: 4677113430882023041
+      Pale Moon Tileset_24: 3399264792938591727
+      Pale Moon Tileset_4: 4642490956095827091
+      Pale Moon Tileset_55: 5111480752967792398
+      Pale Moon Tileset_15: 1060405302810175223
+      Pale Moon Tileset_28: 1146871963785238605
+      Pale Moon Tileset_56: 998235862339883519
+      Pale Moon Tileset_68: 4308361016496912479
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
